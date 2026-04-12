@@ -1,0 +1,28 @@
+src
+ ┣ components
+ ┃ ┣ Alert.jsx
+ ┃ ┣ Astronaut.jsx
+ ┃ ┣ Card.jsx
+ ┃ ┣ CopyEmailButton.jsx
+ ┃ ┣ FlipWord.jsx
+ ┃ ┣ Frameworks.jsx
+ ┃ ┣ Globe.jsx
+ ┃ ┣ HeroText.jsx
+ ┃ ┣ Loader.jsx
+ ┃ ┣ OrbitingCircles.jsx
+ ┃ ┣ ParallaxBackground.jsx
+ ┃ ┣ Particles.jsx
+ ┃ ┣ Project.jsx
+ ┃ ┗ ProjectDetails.jsx
+ ┣ constants
+ ┃ ┗ index.js
+ ┣ sections
+ ┃ ┣ About.jsx
+ ┃ ┣ Contact.jsx
+ ┃ ┣ Footer.jsx
+ ┃ ┣ Hero.jsx
+ ┃ ┣ Navbar.jsx
+ ┃ ┗ Projects.jsx
+ ┣ App.jsx
+ ┣ index.css
+ ┗ main.jsx

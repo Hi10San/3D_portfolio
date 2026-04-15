@@ -1,48 +1,20 @@
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Astronaut } from "../components/Astronaut";
-import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
-import { Float } from "@react-three/drei";
-import { useMediaQuery } from "react-responsive";
-import { easing } from "maath";
+import Spline from '@splinetool/react-spline';
 import { Suspense } from "react";
-import  Loader  from "../components/Loader";
-
-
+import Loader from "../components/Loader";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth:853});
   return (
     <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden">
-        <HeroText />
-        <ParallaxBackground />
-        <figure className="absolute inset-0" 
-        style= {{ width : "100vw" , height: "100vh"}}
-        >
-          <Canvas camera={{position: [0,1,3]}}>
-            <Suspense fallback={<Loader />}>
-              <Float>
-                <Astronaut 
-                scale = {isMobile && 0.23} 
-                position = {isMobile && [0,-1.5,0]}/>
-              </Float>
-              <Rig />
-            </Suspense>
-          </Canvas>
-        </figure>
+      <figure
+        className="absolute inset-0"
+        style={{ width: "100vw", height: "100vh" }}
+      >
+        <Suspense fallback={<Loader />}>
+          <Spline scene="https://prod.spline.design/4qkyCaJdjrewNVBZ/scene.splinecode" />
+        </Suspense>
+      </figure>
     </section>
   );
 };
 
-function Rig(){
-  return useFrame((state , delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.mouse.x /10, 1+ state.mouse.y /10,3],
-      0.5,
-      delta
-    );
-  });
-}
-
-export default Hero
+export default Hero;

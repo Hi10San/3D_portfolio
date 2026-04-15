@@ -4,9 +4,9 @@ import { OrbitingCircles } from "./OrbitingCircles"
 export function Frameworks() {
     const skills = [
         "auth0",
-        "blazer",
+        "blazor",
         "cplusplus",
-        "chasrp",
+        "csharp",
         "css3",
         "dotnet",
         "dotnetcore",
@@ -17,7 +17,7 @@ export function Frameworks() {
         "react",
         "sqlite",
         "tailwindcss",
-        "vite.js",
+        "vitejs",
         "wordpress",
     ];
   return (

@@ -47,7 +47,7 @@ const About = () => {
                     <Card style = {{ rotate: "-60deg" , top: "50%", left: "70%"}} text="TailWind"
                     containerRef = {grid2Container}
                     />
-                    <Card style = {{ rotate: "-20deg" , top: "80%", left: "10%"}} text="Node>js"
+                    <Card style = {{ rotate: "-20deg" , top: "80%", left: "10%"}} text="Node.js"
                     containerRef = {grid2Container}
                     />
                     <Card style = {{ rotate: "30deg" , top: "90%", left: "50%"}} image = "assets/logos/csharp-pink.png"

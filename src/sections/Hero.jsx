@@ -1,7 +1,6 @@
+import Spline from "@splinetool/react-spline";
 import Loader from "../components/Loader";
-import { lazy, Suspense, useEffect, useState } from "react";
-
-const Spline = lazy(() => import("@splinetool/react-spline"));
+import { Suspense, useEffect, useState } from "react";
 
 const Hero = () => {
   const [loadSpline, setLoadSpline] = useState(false);

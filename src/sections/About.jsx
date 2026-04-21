@@ -3,8 +3,7 @@ import Card from "../components/Card.jsx";
 import { useRef } from "react";
 import { Globe } from "../components/Globe.jsx";
 import CopyEmailButton from "../components/CopyEmailButton.jsx";
-import { Frameworks } from "../components/Frameworks.jsx";
-
+import { Frameworks } from "../components/Frameworks.jsx"; 
 
 
 
@@ -27,7 +26,8 @@ const About = () => {
                 />
                 <div className="z-10">
                     <p className="headtext">Hi, i'm Hiten</p>
-                    <p className="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa inventore aliquam sed temporibus repudiandae fugit?</p>
+                    <p className="subtext">I’m a developer focused on building practical and user-friendly web systems. I combine problem-solving with modern UI design to create clean, efficient digital experiences.
+</p>
                 </div>
                 <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"/>
             </div>
@@ -72,14 +72,14 @@ const About = () => {
                 </figure>
             </div>
             {/* Grid 4 */}
-            <div className="grid-black-color grid-4">
-                <div className="flex flex-col items-center justify-center gap-4 size-full">
-                    <p className="text-center headtext">
-                        Do you want to start a project together?
-                    </p>
-                    <CopyEmailButton />
+                <div  className="grid-black-color  grid-4">
+                    <div className="flex flex-col items-center justify-center gap-4 size-full">
+                        <p className="text-center headtext">
+                            Do you want to start a project together?
+                        </p>
+                        <CopyEmailButton />
+                    </div>
                 </div>
-            </div>
             {/* Grid 5 */}
             <div className="grid-default-color grid-5">
                 <div className="z-10 w-[50%]">

@@ -1,156 +1,156 @@
 export const myProjects = [
-{
-  id: 1,
-  title: "AI Home Assistant System",
-  description:
-    "A fully local, privacy-focused AI-powered smart home assistant built using Ollama, Home Assistant, and Raspberry Pi with voice control.",
-  subDescription: [
-    "Built a distributed AI system using Ollama with Llama 3.2 3B running on WSL2 for local AI processing.",
-    "Integrated Home Assistant on a virtual machine to manage smart home automation and device control.",
-    "Developed a voice interface using Wyoming Satellite on Raspberry Pi for real-time speech interaction.",
-    "Designed a fully offline system ensuring 100% privacy with no cloud dependency.",
-    "Implemented multi-device communication over local network for seamless automation."
-  ],
-  href: "", // 👉 put GitHub or demo link here later
-  logo: "",
-  image: "/assets/projects/ai-home.png", // 👉 change image
-  tags: [
-    {
-      id: 1,
-      name: "Ollama",
-      path: "/assets/logos/ollama.svg",
-    },
-    {
-      id: 2,
-      name: "Home Assistant",
-      path: "/assets/logos/homeassistant.svg",
-    },
-    {
-      id: 3,
-      name: "Raspberry Pi",
-      path: "/assets/logos/raspberrypi.svg",
-    },
-    {
-      id: 4,
-      name: "WSL2",
-      path: "/assets/logos/linux.svg",
-    },
-  ],
-},
-{
-  id: 2,
-  title: "Dark Web Portfolio Hosting (Tor + Nginx)",
-  description:
-    "Deployed a personal portfolio website on the Tor network using WSL, Nginx, and Onion services.",
-  subDescription: [
-    "Set up a Linux (WSL) environment on Windows to host services locally.",
-    "Configured Nginx as a web server to serve a custom portfolio website.",
-    "Installed and configured Tor to create a hidden service (.onion) for anonymous hosting.",
-    "Generated a custom vanity v3 onion address using mkp224o.",
-    "Used OnionShare for secure file sharing and testing Tor-based communication.",
-    "Managed system services, networking, and security configurations manually via CLI.",
-  ],
-  href: "https://github.com/Hi10San/darkweb_website",
-  logo: "",
-  image: "/assets/projects/darkweb-project.png",
-  tags: [
-    {
-      id: 1,
-      name: "Tor",
-      path: "/assets/logos/tor.svg",
-    },
-    {
-      id: 2,
-      name: "Nginx",
-      path: "/assets/logos/nginx.svg",
-    },
-    {
-      id: 3,
-      name: "WSL",
-      path: "/assets/logos/wsl.svg",
-    },
-    {
-      id: 4,
-      name: "Linux",
-      path: "/assets/logos/linux.svg",
-    },
-  ],
-},
-{
-  id: 3,
-  title: "Local NAS Server (Old Phone Cloud)",
-  description:
-    "A fully offline, private NAS system built using an old Android phone, providing Google Drive–like functionality over a local network.",
-  subDescription: [
-    "Engineered a 24/7 local NAS server using Termux (Linux on Android) with OpenSSH for secure remote access.",
-    "Designed a structured file system with shared storage using symbolic linking between internal Linux directories and Android storage.",
-    "Enabled seamless file transfer and remote management via SSH and SFTP protocols across devices.",
-    "Integrated CX File Explorer (mobile) and RaiDrive (Windows) to simulate a real cloud drive with drag-and-drop functionality.",
-    "Optimized Android system settings to remove background restrictions, ensuring continuous server uptime.",
-    "Built a fully offline, privacy-focused cloud alternative with zero dependency on external services or internet.",
-  ],
-  href: "",
-  logo: "",
-  image: "/assets/projects/nas-server.png",
-  tags: [
-    {
-      id: 1,
-      name: "Termux",
-      path: "/assets/logos/termux.svg",
-    },
-    {
-      id: 2,
-      name: "OpenSSH",
-      path: "/assets/logos/ssh.svg",
-    },
-    {
-      id: 3,
-      name: "SFTP",
-      path: "/assets/logos/sftp.svg",
-    },
-    {
-      id: 4,
-      name: "Linux",
-      path: "/assets/logos/linux.svg",
-    },
-  ],
-},
-{
-  id: 4,
-  title: "Blogging Website",
-  description:
-    "A full-stack, responsive blogging platform supporting markdown posts, user comments, and real-time ratings.",
-  subDescription: [
-    "Developed a responsive frontend with clean UI component layouts and seamless navigation.",
-    "Built a secure backend API allowing markdown posts rendering and user comments.",
-    "Integrated custom databases and deployed to Vercel with optimized serverless routing.",
-  ],
-  href: "https://blogging-website-six-weld.vercel.app/",
-  logo: "",
-  image: "/assets/projects/blogging-website.png",
-  tags: [
-    {
-      id: 1,
-      name: "React",
-      path: "/assets/logos/react.svg",
-    },
-    {
-      id: 2,
-      name: "Tailwind CSS",
-      path: "/assets/logos/tailwindcss.svg",
-    },
-    {
-      id: 3,
-      name: "JavaScript",
-      path: "/assets/logos/javascript.svg",
-    },
-    {
-      id: 4,
-      name: "Git",
-      path: "/assets/logos/git.svg",
-    },
-  ],
-},
+  {
+    id: 1,
+    title: "AI Home Assistant System",
+    description:
+      "A fully local, privacy-focused AI-powered smart home assistant built using Ollama, Home Assistant, and Raspberry Pi with voice control.",
+    subDescription: [
+      "Built a distributed AI system using Ollama with Llama 3.2 3B running on WSL2 for local AI processing.",
+      "Integrated Home Assistant on a virtual machine to manage smart home automation and device control.",
+      "Developed a voice interface using Wyoming Satellite on Raspberry Pi for real-time speech interaction.",
+      "Designed a fully offline system ensuring 100% privacy with no cloud dependency.",
+      "Implemented multi-device communication over local network for seamless automation."
+    ],
+    href: "", // 👉 put GitHub or demo link here later
+    logo: "",
+    image: "/assets/projects/ai-home.png", // 👉 change image
+    tags: [
+      {
+        id: 1,
+        name: "Ollama",
+        path: "/assets/logos/ollama.svg",
+      },
+      {
+        id: 2,
+        name: "Home Assistant",
+        path: "/assets/logos/homeassistant.svg",
+      },
+      {
+        id: 3,
+        name: "Raspberry Pi",
+        path: "/assets/logos/raspberrypi.svg",
+      },
+      {
+        id: 4,
+        name: "WSL2",
+        path: "/assets/logos/linux.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Dark Web Portfolio Hosting (Tor + Nginx)",
+    description:
+      "Deployed a personal portfolio website on the Tor network using WSL, Nginx, and Onion services.",
+    subDescription: [
+      "Set up a Linux (WSL) environment on Windows to host services locally.",
+      "Configured Nginx as a web server to serve a custom portfolio website.",
+      "Installed and configured Tor to create a hidden service (.onion) for anonymous hosting.",
+      "Generated a custom vanity v3 onion address using mkp224o.",
+      "Used OnionShare for secure file sharing and testing Tor-based communication.",
+      "Managed system services, networking, and security configurations manually via CLI.",
+    ],
+    href: "https://github.com/Hi10San/darkweb_website",
+    logo: "",
+    image: "/assets/projects/darkweb-project.png",
+    tags: [
+      {
+        id: 1,
+        name: "Tor",
+        path: "/assets/logos/tor.svg",
+      },
+      {
+        id: 2,
+        name: "Nginx",
+        path: "/assets/logos/nginx.svg",
+      },
+      {
+        id: 3,
+        name: "WSL",
+        path: "/assets/logos/wsl.svg",
+      },
+      {
+        id: 4,
+        name: "Linux",
+        path: "/assets/logos/linux.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Local NAS Server (Old Phone Cloud)",
+    description:
+      "A fully offline, private NAS system built using an old Android phone, providing Google Drive–like functionality over a local network.",
+    subDescription: [
+      "Engineered a 24/7 local NAS server using Termux (Linux on Android) with OpenSSH for secure remote access.",
+      "Designed a structured file system with shared storage using symbolic linking between internal Linux directories and Android storage.",
+      "Enabled seamless file transfer and remote management via SSH and SFTP protocols across devices.",
+      "Integrated CX File Explorer (mobile) and RaiDrive (Windows) to simulate a real cloud drive with drag-and-drop functionality.",
+      "Optimized Android system settings to remove background restrictions, ensuring continuous server uptime.",
+      "Built a fully offline, privacy-focused cloud alternative with zero dependency on external services or internet.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/nas-server.png",
+    tags: [
+      {
+        id: 1,
+        name: "Termux",
+        path: "/assets/logos/termux.svg",
+      },
+      {
+        id: 2,
+        name: "OpenSSH",
+        path: "/assets/logos/ssh.svg",
+      },
+      {
+        id: 3,
+        name: "SFTP",
+        path: "/assets/logos/sftp.svg",
+      },
+      {
+        id: 4,
+        name: "Linux",
+        path: "/assets/logos/linux.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Blogging Website",
+    description:
+      "A full-stack, responsive blogging platform supporting markdown posts, user comments, and real-time ratings.",
+    subDescription: [
+      "Developed a responsive frontend with clean UI component layouts and seamless navigation.",
+      "Built a secure backend API allowing markdown posts rendering and user comments.",
+      "Integrated custom databases and deployed to Vercel with optimized serverless routing.",
+    ],
+    href: "https://blogging-website-six-weld.vercel.app/",
+    logo: "",
+    image: "/assets/projects/blogging-website.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/assets/logos/git.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [

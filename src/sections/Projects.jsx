@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <section id="projects" onMouseMove={handleMouseMove} className="relative c-space section-spacing">
       <motion.h2
-        className="text-heading"
+        className="text-4xl md:text-5xl font-extrabold font-montserrat tracking-tight text-white"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, margin: "-10% 0px" }}
@@ -48,7 +48,7 @@ const Projects = () => {
       </motion.h2>
 
       <motion.div
-        className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"
+        className="bg-gradient-to-r from-transparent via-neutral-600/40 to-transparent mt-12 h-[1px] w-full"
         initial={{ scaleX: 0, opacity: 0 }}
         whileInView={{ scaleX: 1, opacity: 1 }}
         viewport={{ once: false, margin: "-10% 0px" }}

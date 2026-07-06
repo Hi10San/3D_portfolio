@@ -22,8 +22,7 @@ const Project = ({
         onClick={() => setIsHidden(true)} // Makes the whole row clickable for better UX
       >
         <div>
-          {/* Using Syne for the title if you updated your CSS variables */}
-          <p className="text-2xl font-syne  transition-colors duration-300">
+          <p className="text-2xl font-bold font-montserrat tracking-tight text-white transition-colors duration-300">
             {title}
           </p>
           
@@ -52,7 +51,7 @@ const Project = ({
       </div>
 
       {/* Modern thin divider */}
-      <div className="bg-gradient-to-r from-transparent via-neutral-800 to-transparent h-[1px] w-full" />
+      <div className="bg-gradient-to-r from-transparent via-neutral-700/40 to-transparent h-[1px] w-full" />
 
       {isHidden && (
         <ProjectDetails

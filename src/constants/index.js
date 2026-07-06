@@ -115,6 +115,42 @@ export const myProjects = [
     },
   ],
 },
+{
+  id: 4,
+  title: "Blogging Website",
+  description:
+    "A full-stack, responsive blogging platform supporting markdown posts, user comments, and real-time ratings.",
+  subDescription: [
+    "Developed a responsive frontend with clean UI component layouts and seamless navigation.",
+    "Built a secure backend API allowing markdown posts rendering and user comments.",
+    "Integrated custom databases and deployed to Vercel with optimized serverless routing.",
+  ],
+  href: "https://blogging-website-six-weld.vercel.app/",
+  logo: "",
+  image: "/assets/projects/blogging-website.png",
+  tags: [
+    {
+      id: 1,
+      name: "React",
+      path: "/assets/logos/react.svg",
+    },
+    {
+      id: 2,
+      name: "Tailwind CSS",
+      path: "/assets/logos/tailwindcss.svg",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      path: "/assets/logos/javascript.svg",
+    },
+    {
+      id: 4,
+      name: "Git",
+      path: "/assets/logos/git.svg",
+    },
+  ],
+},
 ];
 
 export const mySocials = [
@@ -138,6 +174,102 @@ export const mySocials = [
   //   href: "https://www.instagram.com/ali.sanatidev/reels/",
   //   icon: "/assets/socials/Discord.svg",
   // },
+];
+
+export const projectCategories = [
+  {
+    title: "AI & Automation",
+    gradient: "linear-gradient(135deg, #33c2cc, #57db96)",
+    projects: [
+      {
+        id: "ai1",
+        image: "/assets/projects/ai-home.png",
+        title: "AI Home Assistant",
+        href: "",
+        description: "A fully local, privacy-focused AI-powered smart home assistant built using Ollama, Home Assistant, and Raspberry Pi.",
+        subDescription: [
+          "Built a distributed AI system using Ollama with Llama 3.2 3B running on WSL2 for local processing.",
+          "Integrated Home Assistant on a virtual machine to manage smart home automation and device control.",
+          "Developed a voice interface using Wyoming Satellite on Raspberry Pi for real-time speech interaction."
+        ],
+        tags: [
+          { id: 1, name: "React", path: "/assets/logos/react.svg" },
+          { id: 2, name: "Vite", path: "/assets/logos/vitejs.svg" },
+          { id: 3, name: "HTML5", path: "/assets/logos/html5.svg" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Networking & Security",
+    gradient: "linear-gradient(135deg, #5c33cc, #ca2f8c)",
+    projects: [
+      {
+        id: "ns1",
+        image: "/assets/projects/darkweb-project.png",
+        title: "Dark Web Portfolio",
+        href: "https://github.com/Hi10San/darkweb_website",
+        description: "Deployed a personal portfolio website on the Tor network using WSL, Nginx, and Onion services.",
+        subDescription: [
+          "Set up a Linux (WSL) environment on Windows to host services locally.",
+          "Configured Nginx as a web server to serve a custom portfolio website.",
+          "Installed and configured Tor to create a hidden service (.onion) for anonymous hosting."
+        ],
+        tags: [
+          { id: 1, name: "HTML5", path: "/assets/logos/html5.svg" },
+          { id: 2, name: "CSS3", path: "/assets/logos/css3.svg" },
+          { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Infrastructure",
+    gradient: "linear-gradient(135deg, #cc6033, #d6995c)",
+    projects: [
+      {
+        id: "inf1",
+        image: "/assets/projects/nas-server.png",
+        title: "Local NAS Server",
+        href: "",
+        description: "A fully offline, private NAS system built using an old Android phone, providing Google Drive–like functionality over a local network.",
+        subDescription: [
+          "Engineered a local NAS server using Termux with OpenSSH for secure remote access.",
+          "Designed structured file system with shared storage using symbolic linking.",
+          "Enabled file transfer and remote management via SFTP protocols."
+        ],
+        tags: [
+          { id: 1, name: "Git", path: "/assets/logos/git.svg" },
+          { id: 2, name: "SQLite", path: "/assets/logos/sqlite.svg" },
+          { id: 3, name: "VS Code", path: "/assets/logos/visualstudiocode.svg" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Web Development",
+    gradient: "linear-gradient(135deg, #e73827, #f85032)",
+    projects: [
+      {
+        id: "web1",
+        image: "/assets/projects/blogging-website.png",
+        title: "Blogging Website",
+        href: "https://blogging-website-six-weld.vercel.app/",
+        description: "A full-stack, responsive blogging platform supporting markdown posts, user comments, and real-time ratings.",
+        subDescription: [
+          "Developed a responsive frontend with clean UI layouts and seamless navigation.",
+          "Built a secure backend API allowing markdown posts rendering and user comments.",
+          "Integrated custom databases and deployed to Vercel with optimized serverless routing."
+        ],
+        tags: [
+          { id: 1, name: "React", path: "/assets/logos/react.svg" },
+          { id: 2, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+          { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+          { id: 4, name: "Git", path: "/assets/logos/git.svg" }
+        ]
+      }
+    ]
+  }
 ];
 
 // export const experiences = [

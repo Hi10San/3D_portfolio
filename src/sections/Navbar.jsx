@@ -1,19 +1,35 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {motion} from "motion/react";
 
 function Navigation() {
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+
     return <ul className="nav-ul">
         <li className="nav-li">
-            <a href="#home" className="nav-link">Home</a>
+            {isHome ? (
+                <a href="#home" className="nav-link">Home</a>
+            ) : (
+                <Link to="/" className="nav-link">Home</Link>
+            )}
         </li>
         <li className="nav-li">
-            <a href="#about" className="nav-link">About</a>
+            {isHome ? (
+                <a href="#about" className="nav-link">About</a>
+            ) : (
+                <Link to="/#about" className="nav-link">About</Link>
+            )}
         </li>
         <li className="nav-li">
-            <a href="#projects" className="nav-link">Projects</a>
+            <Link to="/projects" className="nav-link">Projects</Link>
         </li>
         <li className="nav-li">
-            <a href="#contact" className="nav-link">Contact</a>
+            {isHome ? (
+                <a href="#contact" className="nav-link">Contact</a>
+            ) : (
+                <Link to="/#contact" className="nav-link">Contact</Link>
+            )}
         </li>
         </ul>
 }
@@ -24,7 +40,7 @@ const Navbar = () => {
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
         <div className="mx-auto c-space max-w-7xl">
             <div className="flex items-center justify-between py-2 sm:py-0">
-                <a href="/" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">Hi10</a>
+                <Link to="/" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">Hi10</Link>
                 <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden">
                     <img src={isOpen?"assets/close.svg" : "assets/menu.svg"} className="w-6 h-6" alt="toggle"/>
                 </button>

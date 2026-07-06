@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 @theme {
+  --font-syne: "Syne", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --color-primary: #030412;
   --color-midnight: #06091f;
   --color-navy: #161a31;
@@ -47,6 +49,25 @@
     }
   }
 }
+
+/* Shadcn-style CSS variables for 3D folder component */
+:root {
+  --background: #030412;
+  --foreground: #f0f0f5;
+  --card: #161a31;
+  --card-foreground: #f0f0f5;
+  --muted: #282b4b;
+  --muted-foreground: #9ca3af;
+  --accent: #33c2cc;
+  --accent-foreground: #f0f0f5;
+  --primary: #5c33cc;
+  --primary-foreground: #ffffff;
+  --border: #282b4b;
+  --folder-back: #5c33cc;
+  --folder-tab: #7a57db;
+  --folder-front: #9370e8;
+}
+
 body {
   background: #000000;
   font-family: "Syne", sans-serif;
